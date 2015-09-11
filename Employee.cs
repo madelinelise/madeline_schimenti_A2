@@ -49,6 +49,10 @@ namespace madeline_schimenti_A2
             }
         }
 
+        public Employee(string tfirstName, string tlastName, decimal tyearSalary)
+        {
+
+        } // end Employee constructor
 
     } // end Employee Class
 }
