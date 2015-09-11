@@ -10,7 +10,7 @@ namespace madeline_schimenti_A2
     {
         string firstName;
         string lastName;
-        decimal yearSalary;
+        private decimal yearSalary;
 
         
         public string FirstName
@@ -45,6 +45,7 @@ namespace madeline_schimenti_A2
             }
             set
             {
+                if (value >=0)
                 this.yearSalary = value;
             }
         }
@@ -52,7 +53,18 @@ namespace madeline_schimenti_A2
         public Employee(string tfirstName, string tlastName, decimal tyearSalary)
         {
 
+            FirstName = tfirstName;
+
+            LastName = tlastName;
+
+            YearSalary = tyearSalary;
+
         } // end Employee constructor
 
+       
+
+
+       
     } // end Employee Class
+
 }
